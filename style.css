@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%;
+  background:  url(IMG/bkgr1\ pexels-francesco-ungaro-673648\ 1920x1280.jpg) center center no-repeat;
+  background-size: cover;
+  color: #1F2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  place-items: center;
+  font-family: "Brush Script MT", cursive, Inter, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  place-items: center;
+  padding: 0 5rem;
+  height: 100vh;
+}
+
+.urare {
+  margin: 0 auto;
+  font-size: clamp(7rem, 15vw, 12rem);
+  padding: 8rem 0rem 8rem;
+  text-align: center; 
+  color: #f70505;
+}
+
+.posta,
+.cadou {
+  padding-bottom: 8rem;
+  max-width: 100%;
+  max-height: 100vh;
+  height:800px;
+}
+
+.cadou {display: none;}
+
+main:hover .posta {display: none}
+main:hover .cadou {display: inline-block}
+
+@media (max-width: 700px) {
+  
+  main {
+    display: flex;
+    flex: 1 0 auto;
+  }
+
+  .urare {
+    font-size: clamp(7rem, 12vw, 10rem);
+    padding: 2rem 0rem 0rem;
+  }
+  
+  .posta,
+  .cadou {
+    object-fit: contain;
+    max-height: 650px;
+    padding-bottom: 4rem;
+  }
+}
